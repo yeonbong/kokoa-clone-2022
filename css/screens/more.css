@@ -53,6 +53,9 @@
 .more-suggestions__icon-image i{
     font-size: 32px;
     color: white;
-
 }
 
+.bitcoin {
+    position: relative;
+    left: 10px;
+}

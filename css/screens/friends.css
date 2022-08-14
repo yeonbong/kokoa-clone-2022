@@ -1,7 +1,27 @@
+@keyframes display {
+    0%{
+        color:#B68989;
+        transform: none;
+    }
+    50%{
+        color: #E5B2AA;
+        transform: scale(1.5);
+    }
+    100%{
+        color: #B68989;
+        transform: none;
+    }
+}
+
+#friends-display-link:hover {
+    animation: display 1s linear infinite;
+    will-change: transform;
+}
+
 #friends-display-link {
 text-align: center;
 display: block;
-background-color: #fafafa;
+background-color: #B68989;
 padding: 15px 0px;
 font-size: 18px;
 margin-bottom: 15px;
@@ -41,7 +61,7 @@ margin-top: -15px;
 }
 
 #splash-screen{
-    background-color: var(--yellow);
+    background-color: #E5B2AA;
     position: absolute;
     height: 100vh;
     width: 100vw;
@@ -50,6 +70,6 @@ margin-top: -15px;
     justify-content: center;
     align-items: center;
     font-size: 132px;
-    animation: hideSplashScreen 0.3s ease-in-out forwards;
-    animation-delay: 2s;
+    animation: hideSplashScreen 0.1s ease-in-out forwards;
+    animation-delay: 1.5s;
 }
